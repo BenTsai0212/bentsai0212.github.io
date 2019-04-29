@@ -1,0 +1,533 @@
+$page : 7
+$arrowURL:"https://i.imgur.com/osZF3rT.png"
+$font-family: 微軟正黑體
+$main-color: #fff//#d8d8d8 
+$upbar-color: #c3423f
+$cloth-new: "https://i.imgur.com/wD4LdkS.jpg"
+$cloth-dirt: "https://i.imgur.com/FNR1TN9.jpg"
+$cloth-sent: "https://i.imgur.com/UiPowyt.jpg"
+$Kelk: "https://i.imgur.com/EWMMs6s.png"
+$Rollmax: "https://i.imgur.com/RerzirJ.png"
+$pagebackground: "https://i.imgur.com/8F3SVHQ.png"
+$pageheight: 1550px
+$slide1: "https://i.imgur.com/B0l7E2y.jpg"
+$slide2: "https://i.imgur.com/cUAqwUD.jpg"
+$slide3: "https://i.imgur.com/lK9t0lV.jpg"
+$slide4: "https://i.imgur.com/kuX3yEz.jpg"
+$slide5: "https://i.imgur.com/qFLacsF.jpg"
+$slide6: "https://i.imgur.com/vHcw0Mx.jpg"
+$slide7: "https://i.imgur.com/yk5vbUC.jpg"
+$slide8: "https://i.imgur.com/5RrzCax.jpg"
+$laser-image: "https://i.imgur.com/Vfzh0UL.jpg"
+$crop-image1: "https://i.imgur.com/deKhFAU.jpg"
+$crop-image2: "https://i.imgur.com/9sXGAue.png"
+$loadcell-image1: "https://i.imgur.com/LWoHVb4.jpg"
+$loadcell-image2: "https://i.imgur.com/KNSoD2B.jpg"
+$width-image1: "https://i.imgur.com/z3saDt1.jpg"
+$width-image2: "https://i.imgur.com/wWLuahi.jpg"
+$width-image3: "https://i.imgur.com/VbTnEGv.jpg"
+$width-image4: "https://i.imgur.com/MZo6WOB.jpg"
+$width-image5: "https://i.imgur.com/8pWpMIh.jpg"
+$video-image: "https://i.imgur.com/irDFqWP.png"
+$arrow: "https://i.imgur.com/4BmhnLq.png"
+
+
+
+=size($w, $h, $c)
+  width: $w
+  height: $h
+  background-color: $c
+  background-color: transparent
+  
+=squar($w)
+  width: $w
+  height: $w
+  
+=flexcenter()
+  display: flex
+  justify-content: center
+  align-items: center
+
+*
+  font-family: $font-family
+  //border: solid black 2px
+  transition-duration: 0.5s
+
+html, body
+  margin: 0
+  padding: 0
+  width: 1024px
+  height: $pageheight*5
+
+.upbar
+  +size(1024px, 128px, white)
+  position: absolute
+  top: 0
+  z-index: 2
+  margin: 0
+  padding: 0
+  border-bottom: solid 10px #f15a25
+  .bar
+    top: 0
+    position: absolute
+    +size(1024px, 100%, white)
+    +flexcenter()
+    overflow: hidden
+    flex-direction: row
+    .brand
+      cursor: pointer
+    .brand1
+      margin-left: -20px
+      margin-right: 50px
+      margin-top: 13px
+      +size(420px, 88px, white)
+      background: url($Kelk)
+      background-size: 100%
+    .brand2
+      margin-right: -20px
+      +size(400px, 70px, white)
+      background: url($Rollmax)
+      background-size: 100%
+      
+.main, .page
+  +size(1024px, 1705px, white)
+  background-color: $main-color
+  overflow: hidden
+  //border-bottom: solid $upbar-color 2px
+.page
+  position: relative
+  background: url($pagebackground)
+  background-size: 100% 100%
+  .pagebar
+    +size(1024px, 125px, white)
+    background-color: #343434
+  .bigblock
+    left: -55px
+    top: 12px
+  
+.block
+  +size(15px, 15px, white)
+  background-color: #f15a25
+  position: absolute
+  
+.bigblock
+  +size(24px, 24px, white)
+  background-color: #f15a25
+  position: absolute
+
+.arrow
+  +size(64px, 64px, white)
+  background: url($arrow)
+  background-size: 100% 100%
+  position: absolute
+  right: 60px
+  bottom: 16px
+  cursor: pointer
+  
+.main
+  top: 128px
+  position: relative
+  .movingPage
+    top: 0
+    +size(100%*8, 347px, white)
+    background-color: white
+    display: flex
+    flex-direction: row
+    margin-left: 0%
+    .p
+      +size(100%, 100%, white)
+    .p1
+      background: url($slide1)
+      background-size: 100% 100%
+    .p2
+      background: url($slide2)
+      background-size: 100% 100%
+    .p3
+      background: url($slide3)
+      background-size: 100% 100%
+    .p4
+      background: url($slide4)
+      background-size: 100% 100%
+    .p5
+      background: url($slide5)
+      background-size: 100% 100%
+    .p6
+      background: url($slide6)
+      background-size: 100% 100%
+    .p7
+      background: url($slide7)
+      background-size: 100% 100%
+    .p8
+      background: url($slide8)
+      background-size: 100% 100%
+      
+  .content
+    +size(100%, 751px, white)
+    background-color: #777
+    position: relative
+    font-size: 21px
+    color: #fff
+    letter-spacing: 0.45px
+    .chi
+      +size(408px, 435px, white)
+      position: absolute
+      top: 68px
+      left: 58px
+    .eng
+      +size(383px, 435px, white)
+      position: absolute
+      top: 68px
+      right: 66px
+    .bar
+      +size(5px, 504px, white)
+      position: absolute
+      top: 41px
+      left: 512px
+      background-color: #f15a25
+    p
+      padding: 0
+      margin: 0
+    .video
+      +size(300px, 200px, white)
+      position: absolute
+      top: 500px
+      left: 58px
+      .txt
+        font-size: 18px
+        color: yellow
+        font-weight: bold
+      .url
+        +size(270px, 160px, white)
+        position: absolute
+        background: url($video-image)
+        background-size: 100% 100%
+      
+  .product
+    +size(1024px, 357px, white)
+    position: relative
+    .list
+      +size(1024px, 100px, white)
+      background-color: #f15a25
+      color: #fff
+      p
+        font-size: 40px
+      .p1
+        +size(330px, 63px, white)
+        position: absolute
+        top: -10px
+        left: 58px
+    .pro
+      +size(169px, 200px, white)
+      position: absolute
+      top: 129px
+      cursor: pointer
+      .pic
+        +size(169px, 157px, white)
+      .txt
+        +size(200px, 25px, white)
+        margin-top: 0px
+        margin-left: 77px
+      p
+        margin-top: 7px
+        margin-left: 10px
+        text-align: center
+        transform: translateX(-50%)
+        font-size: 16px
+        font-weight: bold
+        color: #5c5c5c
+      .block
+        left: 10px
+        bottom: 18px
+    .p1
+      left: 60px
+      .b1
+        left: 5px
+      .pic
+        background: url($loadcell-image2)
+        background-size: 100% 100%
+    .p2
+      left: 300px
+      .b2
+        left: 40px
+      .pic
+        background: url($width-image1)
+        background-size: 100% 100%
+    .p3
+      left: 540px
+      .b3
+        left: 16px
+      .pic
+        background: url($laser-image)
+        background-size: 100% 190%
+    .p4
+      left: 780px
+      .b4
+        left: -16px
+      .pic
+        background: url($crop-image2)
+        background-size: 100% 100%
+  .footer
+    +size(1024px, 125px, white)
+    background-color: #343434
+    position: relative
+    p
+      margin-top: 0
+      font-size: 23px
+      color: #c5c5c5
+    .logo
+      +size(617px, 50px, white)
+      position: absolute
+      left: 58px
+      top: 22px
+      p
+        color: #fff
+        font-size: 36px
+        font-weight: bold
+    .rurl
+      +size(130px, 32px, white)
+      position: absolute
+      left: 58px
+      top: 79px
+    .url1
+      +size(340px, 32px, white)
+      position: absolute
+      left: 188px
+      top: 79px
+    .kurl
+      +size(74px, 32px, white)
+      position: absolute
+      left: 672px
+      top: 79px
+    .url2
+      +size(335px, 32px, white)
+      position: absolute
+      left: 746px
+      top: 79px
+    
+.page1
+  +size(1024px, 1000px, white)
+  background-size: 100% 
+  position: relative
+  .project
+    +size(280px, 50px, white)
+    position: absolute
+    color: #fff
+    left: 118px
+    top: 38px
+    border-bottom: solid 6px #9b9b9b
+    p
+      margin-top: 0
+      font-size: 35px
+      font-weight: bold
+  .pro1
+    +size(888px, 584px, white)
+    position: absolute
+    left: 118px
+    top: 200px
+    .title
+      +size(800px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold
+    .pic
+      +size(300px, 270px, white)
+      position: absolute
+      background: url($loadcell-image1)
+      background-size: 100% 100%
+      top: 400px
+      right: 50px
+  
+  
+.page2
+  +size(1024px, 2500px, white)
+  background-size: 100%
+  position: relative
+  .project
+    +size(110px, 50px, white)
+    position: absolute
+    color: #fff
+    left: 118px
+    top: 38px
+    border-bottom: solid 6px #9b9b9b
+    p
+      margin-top: 0
+      font-size: 35px
+      font-weight: bold
+  .pro1
+    +size(888px, 584px, white)
+    position: absolute
+    left: 118px
+    top: 200px
+    .title
+      +size(900px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold
+    .pic1
+      +size(240px, 140px, white)
+      position: absolute
+      background: url($width-image1)
+      background-size: 100% 100%
+      left: 450px
+      top: 580px
+    .pic2
+      +size(150px, 300px, white)
+      position: absolute
+      background: url($width-image2)
+      background-size: 100% 100%
+      left: 710px
+      top: 420px
+      
+  .pro2
+    +size(888px, 584px, white)
+    position: absolute
+    left: 118px
+    top: 960px
+    .title
+      +size(500px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold
+    .pic
+      +size(420px, 240px, white)
+      position: absolute
+      background: url($width-image3)
+      background-size: 100% 100%
+      left: 210px
+      top: 520px
+  .pro3
+    +size(888px, 584px, white)
+    position: absolute
+    left: 118px
+    top: 1800px
+    .title
+      +size(500px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold
+    .pic1
+      +size(260px, 200px, white)
+      position: absolute
+      background: url($width-image4)
+      background-size: 100% 100%
+      left: 150px
+      top: 440px
+    .pic2
+      +size(260px, 200px, white)
+      position: absolute
+      background: url($width-image5)
+      background-size: 100% 100%
+      left: 450px
+      top: 440px
+    
+.page3
+  +size(1024px, 1100px, white)
+  background-size: 100% 
+  position: relative
+  .project
+    +size(220px, 50px, white)
+    position: absolute
+    color: #fff
+    left: 118px
+    top: 38px
+    border-bottom: solid 6px #9b9b9b
+    p
+      margin-top: 0
+      font-size: 35px
+      font-weight: bold
+  .pro1
+    +size(888px, 584px, white)
+    position: absolute
+    left: 118px
+    top: 200px
+    .title
+      +size(800px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      margin-top: 10px
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold  
+    .pic
+      +size(250px, 350px, white)
+      position: absolute
+      background: url($laser-image)
+      background-size: 100% 130%
+      top: 520px
+      right: 370px
+      transform: rotate(-90deg)
+      
+.page4
+  +size(1024px, 1350px, white)
+  background-size: 100% 
+  position: relative
+  .project
+    +size(360px, 50px, white)
+    position: absolute
+    color: #fff
+    left: 118px
+    top: 38px
+    border-bottom: solid 6px #9b9b9b
+    p
+      margin-top: 0
+      font-size: 35px
+      font-weight: bold
+  .pro1
+    +size(930px, 590px, white)
+    position: absolute
+    left: 85px
+    top: 200px
+    .title
+      +size(500px, 110px, white)
+      p
+        margin-top: 0
+        font-size: 36px
+        font-weight: bold
+    .cont
+      margin-top: 10px
+      p
+        margin-top: 0
+        font-size: 18px
+        font-weight: bold
+    .pic
+      +size(220px, 540px, white)
+      position: absolute
+      background: url($crop-image1)
+      background-size: 100% 100%
+      right: 75px
+      top: 520px
+
+
+    
+    
+      
+
+

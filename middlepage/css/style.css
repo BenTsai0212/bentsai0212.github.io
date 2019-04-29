@@ -1,0 +1,751 @@
+@charset "UTF-8";
+* {
+  font-family: 微軟正黑體;
+  transition-duration: 0.5s;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 1024px;
+  height: 7750px;
+}
+
+.upbar {
+  width: 1024px;
+  height: 128px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  margin: 0;
+  padding: 0;
+  border-bottom: solid 10px #f15a25;
+}
+.upbar .bar {
+  top: 0;
+  position: absolute;
+  width: 1024px;
+  height: 100%;
+  background-color: white;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-direction: row;
+}
+.upbar .bar .brand {
+  cursor: pointer;
+}
+.upbar .bar .brand1 {
+  margin-left: -20px;
+  margin-right: 50px;
+  margin-top: 13px;
+  width: 420px;
+  height: 88px;
+  background-color: white;
+  background-color: transparent;
+  background: url(images/logo-03.png);
+  background-size: 100%;
+}
+.upbar .bar .brand2 {
+  margin-right: -20px;
+  width: 400px;
+  height: 70px;
+  background-color: white;
+  background-color: transparent;
+  background: url(images/logo-04.png);
+  background-size: 100%;
+}
+
+.main, .page {
+  width: 1024px;
+  height: 1705px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+.page {
+  position: relative;
+  background: url(images/bg.png);
+  background-size: 100% 100%;
+}
+.page .pagebar {
+  width: 1024px;
+  height: 125px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #343434;
+}
+.page .bigblock {
+  left: -55px;
+  top: 12px;
+}
+
+.block {
+  width: 15px;
+  height: 15px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #f15a25;
+  position: absolute;
+}
+
+.bigblock {
+  width: 24px;
+  height: 24px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #f15a25;
+  position: absolute;
+}
+
+.arrow {
+  width: 64px;
+  height: 64px;
+  background-color: white;
+  background-color: transparent;
+  background: url(images/arrow.png);
+  background-size: 100% 100%;
+  position: absolute;
+  right: 60px;
+  bottom: 16px;
+  cursor: pointer;
+}
+
+.main {
+  top: 128px;
+  position: relative;
+}
+.main .movingPage {
+  top: 0;
+  width: 800%;
+  height: 347px;
+  background-color: white;
+  background-color: transparent;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-left: 0%;
+}
+.main .movingPage .p {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  background-color: transparent;
+}
+.main .movingPage .p1 {
+  background: url(images/slide_0.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p2 {
+  background: url(images/slide_1.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p3 {
+  background: url(images/slide_2.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p4 {
+  background: url(images/slide_3.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p5 {
+  background: url(images/slide_4.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p6 {
+  background: url(images/slide_5.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p7 {
+  background: url(images/slide_6.jpg);
+  background-size: 100% 100%;
+}
+.main .movingPage .p8 {
+  background: url(images/slide_7.jpg);
+  background-size: 100% 100%;
+}
+.main .content {
+  width: 100%;
+  height: 751px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #777;
+  position: relative;
+  font-size: 21px;
+  color: #fff;
+  letter-spacing: 0.45px;
+}
+.main .content .chi {
+  width: 408px;
+  height: 435px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 68px;
+  left: 58px;
+}
+.main .content .eng {
+  width: 383px;
+  height: 435px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 68px;
+  right: 66px;
+}
+.main .content .bar {
+  width: 5px;
+  height: 654px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 41px;
+  left: 512px;
+  background-color: #f15a25;
+}
+.main .content p {
+  padding: 0;
+  margin: 0;
+}
+.main .content .video {
+  width: 300px;
+  height: 200px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 500px;
+  left: 58px;
+}
+.main .content .video .txt {
+  font-size: 18px;
+  color: yellow;
+  font-weight: bold;
+}
+.main .content .video .url {
+  width: 270px;
+  height: 160px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelkvideo.png);
+  background-size: 100% 100%;
+}
+.main .product {
+  width: 1024px;
+  height: 357px;
+  background-color: white;
+  background-color: transparent;
+  position: relative;
+}
+.main .product .list {
+  width: 1024px;
+  height: 100px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #f15a25;
+  color: #fff;
+}
+.main .product .list p {
+  font-size: 40px;
+}
+.main .product .list .p1 {
+  width: 330px;
+  height: 63px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: -10px;
+  left: 58px;
+}
+.main .product .pro {
+  width: 169px;
+  height: 200px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  top: 129px;
+  cursor: pointer;
+}
+.main .product .pro .pic {
+  width: 169px;
+  height: 157px;
+  background-color: white;
+  background-color: transparent;
+}
+.main .product .pro .txt {
+  width: 200px;
+  height: 25px;
+  background-color: white;
+  background-color: transparent;
+  margin-top: 0px;
+  margin-left: 77px;
+}
+.main .product .pro p {
+  margin-top: 7px;
+  margin-left: 10px;
+  text-align: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 16px;
+  font-weight: bold;
+  color: #5c5c5c;
+}
+.main .product .pro .block {
+  left: 10px;
+  bottom: 18px;
+}
+.main .product .p1 {
+  left: 60px;
+}
+.main .product .p1 .b1 {
+  left: 5px;
+}
+.main .product .p1 .pic {
+  background: url(images/kelk2.jpg);
+  background-size: 100% 100%;
+}
+.main .product .p2 {
+  left: 300px;
+}
+.main .product .p2 .b2 {
+  left: 40px;
+}
+.main .product .p2 .pic {
+  background: url(images/kelk15.jpg);
+  background-size: 100% 100%;
+}
+.main .product .p3 {
+  left: 540px;
+}
+.main .product .p3 .b3 {
+  left: 16px;
+}
+.main .product .p3 .pic {
+  background: url(images/kelk10.jpg);
+  background-size: 100% 190%;
+}
+.main .product .p4 {
+  left: 780px;
+}
+.main .product .p4 .b4 {
+  left: -16px;
+}
+.main .product .p4 .pic {
+  background: url(images/crop.png);
+  background-size: 100% 100%;
+}
+.main .footer {
+  width: 1024px;
+  height: 125px;
+  background-color: white;
+  background-color: transparent;
+  background-color: #343434;
+  position: relative;
+}
+.main .footer p {
+  margin-top: 0;
+  font-size: 23px;
+  color: #c5c5c5;
+}
+.main .footer .logo {
+  width: 617px;
+  height: 50px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 58px;
+  top: 22px;
+}
+.main .footer .logo p {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+}
+.main .footer .rurl {
+  width: 130px;
+  height: 32px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 58px;
+  top: 79px;
+}
+.main .footer .url1 {
+  width: 340px;
+  height: 32px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 188px;
+  top: 79px;
+}
+.main .footer .kurl {
+  width: 74px;
+  height: 32px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 672px;
+  top: 79px;
+}
+.main .footer .url2 {
+  width: 335px;
+  height: 32px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 746px;
+  top: 79px;
+}
+
+.page1 {
+  width: 1024px;
+  height: 1000px;
+  background-color: white;
+  background-color: transparent;
+  background-size: 100%;
+  position: relative;
+}
+.page1 .project {
+  width: 280px;
+  height: 50px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  left: 118px;
+  top: 38px;
+  border-bottom: solid 6px #9b9b9b;
+}
+.page1 .project p {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.page1 .pro1 {
+  width: 888px;
+  height: 584px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 118px;
+  top: 200px;
+}
+.page1 .pro1 .title {
+  width: 800px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page1 .pro1 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page1 .pro1 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page1 .pro1 .pic {
+  width: 300px;
+  height: 270px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk3.jpg);
+  background-size: 100% 100%;
+  top: 400px;
+  right: 50px;
+}
+
+.page2 {
+  width: 1024px;
+  height: 2500px;
+  background-color: white;
+  background-color: transparent;
+  background-size: 100%;
+  position: relative;
+}
+.page2 .project {
+  width: 110px;
+  height: 50px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  left: 118px;
+  top: 38px;
+  border-bottom: solid 6px #9b9b9b;
+}
+.page2 .project p {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.page2 .pro1 {
+  width: 888px;
+  height: 584px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 118px;
+  top: 200px;
+}
+.page2 .pro1 .title {
+  width: 900px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page2 .pro1 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page2 .pro1 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page2 .pro1 .pic1 {
+  width: 240px;
+  height: 140px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk15.jpg);
+  background-size: 100% 100%;
+  left: 450px;
+  top: 580px;
+}
+.page2 .pro1 .pic2 {
+  width: 150px;
+  height: 300px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk16.jpg);
+  background-size: 100% 100%;
+  left: 710px;
+  top: 420px;
+}
+.page2 .pro2 {
+  width: 888px;
+  height: 584px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 118px;
+  top: 960px;
+}
+.page2 .pro2 .title {
+  width: 500px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page2 .pro2 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page2 .pro2 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page2 .pro2 .pic {
+  width: 420px;
+  height: 240px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk17.jpg);
+  background-size: 100% 100%;
+  left: 210px;
+  top: 520px;
+}
+.page2 .pro3 {
+  width: 888px;
+  height: 584px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 118px;
+  top: 1800px;
+}
+.page2 .pro3 .title {
+  width: 500px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page2 .pro3 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page2 .pro3 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page2 .pro3 .pic1 {
+  width: 260px;
+  height: 200px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/1.jpg);
+  background-size: 100% 100%;
+  left: 150px;
+  top: 440px;
+}
+.page2 .pro3 .pic2 {
+  width: 260px;
+  height: 200px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/2.jpg);
+  background-size: 100% 100%;
+  left: 450px;
+  top: 440px;
+}
+
+.page3 {
+  width: 1024px;
+  height: 1100px;
+  background-color: white;
+  background-color: transparent;
+  background-size: 100%;
+  position: relative;
+}
+.page3 .project {
+  width: 220px;
+  height: 50px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  left: 118px;
+  top: 38px;
+  border-bottom: solid 6px #9b9b9b;
+}
+.page3 .project p {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.page3 .pro1 {
+  width: 888px;
+  height: 584px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 118px;
+  top: 200px;
+}
+.page3 .pro1 .title {
+  width: 800px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page3 .pro1 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page3 .pro1 .cont {
+  margin-top: 10px;
+}
+.page3 .pro1 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page3 .pro1 .pic {
+  width: 250px;
+  height: 350px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk10.jpg);
+  background-size: 100% 130%;
+  top: 520px;
+  right: 370px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.page4 {
+  width: 1024px;
+  height: 1350px;
+  background-color: white;
+  background-color: transparent;
+  background-size: 100%;
+  position: relative;
+}
+.page4 .project {
+  width: 360px;
+  height: 50px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  color: #fff;
+  left: 118px;
+  top: 38px;
+  border-bottom: solid 6px #9b9b9b;
+}
+.page4 .project p {
+  margin-top: 0;
+  font-size: 35px;
+  font-weight: bold;
+}
+.page4 .pro1 {
+  width: 930px;
+  height: 590px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  left: 85px;
+  top: 200px;
+}
+.page4 .pro1 .title {
+  width: 500px;
+  height: 110px;
+  background-color: white;
+  background-color: transparent;
+}
+.page4 .pro1 .title p {
+  margin-top: 0;
+  font-size: 36px;
+  font-weight: bold;
+}
+.page4 .pro1 .cont {
+  margin-top: 10px;
+}
+.page4 .pro1 .cont p {
+  margin-top: 0;
+  font-size: 18px;
+  font-weight: bold;
+}
+.page4 .pro1 .pic {
+  width: 220px;
+  height: 540px;
+  background-color: white;
+  background-color: transparent;
+  position: absolute;
+  background: url(images/kelk11.jpg);
+  background-size: 100% 100%;
+  right: 75px;
+  top: 520px;
+}
